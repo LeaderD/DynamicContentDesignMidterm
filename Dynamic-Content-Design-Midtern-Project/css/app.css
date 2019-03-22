@@ -1,0 +1,82 @@
+#app {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+#bg {
+    display: flex;
+    flex: 10;
+    flex-direction: row;
+    background-color: white;
+    height: 250px;
+}
+
+#preview {
+    display: flex;
+    flex: 40;
+    background-image: url(../img/bg_0.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.thumbs {
+    display: flex;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    border: white solid 5px;
+}
+#thumb1 {
+    background-image: url(../img/bg_1.svg);
+}
+
+#thumb2 {
+    background-image: url(../img/bg_2.svg);
+}
+
+#thumb3 {
+    background-image: url(../img/bg_3.svg);
+}
+
+#thumb4 {
+    background-image: url(../img/bg_4.svg);
+}
+
+@keyframes fadeinfromBottom {
+    0% {
+        margin-top: 100%;
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        margin-top: 15%;
+    }
+    75% {
+        opacity: 1;
+        margin-top: 15%;
+    }
+    100% {
+        margin-top: 100%;
+        opacity: 0;
+    }
+}
+
+#startimage {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 100%;
+  width: 50%;
+    animation-name: fadeinfromBottom;
+    animation-duration: 10s;
+    text-align: center;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 26pt;
+}
